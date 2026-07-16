@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CA DMV Smog Inspections &amp; Brake and Light Inspections | Smog and Safety Inspection San Diego</title>
+  <meta name="description"
+    content="Certified STAR smog checks, DMV brake and lamp inspections, wheel alignment, and auto repairs in San Diego, CA. Quality service done quickly and right.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css?v=1.2">
+  <link rel="shortcut icon" href="https://www.smogandsafetyinspection.com/wp-content/uploads/2023/09/fav-icon.png"
+    type="image/png">
+  <style>
+    .home-hero {
+      background: var(--bg-dark);
+      padding: 100px 0 60px 0;
+      position: relative;
+    }
+
+    .home-hero-subtitle {
+      color: var(--accent-orange);
+      font-size: 0.9rem;
+      font-weight: 700;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      margin-bottom: 15px;
+    }
+
+    .home-hero h1 {
+      font-size: 3rem;
+      line-height: 1.2;
+      color: var(--text-white);
+      margin-bottom: 20px;
+      font-weight: 800;
+    }
+
+    .home-hero-subtags {
+      font-family: var(--font-heading);
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--primary-blue);
+      letter-spacing: 0.05em;
+      margin-bottom: 35px;
+    }
+
+    .home-hero-btn {
+      background: var(--accent-mint);
+      color: var(--bg-dark);
+      font-weight: 700;
+      padding: 15px 32px;
+      border-radius: var(--radius-sm);
+      text-transform: uppercase;
+      font-size: 0.95rem;
+      border: none;
+      cursor: pointer;
+      display: inline-block;
+      transition: all 0.3s ease;
+      text-decoration: none;
+    }
+
+    .home-hero-btn:hover {
+      background: var(--accent-orange);
+      color: white;
+      transform: translateY(-2px);
+    }
+
+    /* Feature row overlaying border */
+    .hero-feature-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 25px;
+      margin-top: 40px;
+    }
+
+    .hero-feature-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 30px;
+      transition: all 0.3s ease;
+    }
+
+    .hero-feature-card.active {
+      background: var(--accent-mint);
+      border-color: var(--accent-mint);
+    }
+
+    .hero-feature-card.active h3 {
+      color: var(--bg-dark);
+    }
+
+    .hero-feature-card.active p {
+      color: #333;
+    }
+
+    .hero-feature-card h3 {
+      font-size: 1.2rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+    }
+
+    .hero-feature-card p {
+      font-size: 0.95rem;
+      color: var(--text-silver);
+      line-height: 1.5;
+    }
+
+    /* FAQ section */
+    .faq-grid {
+      display: grid;
+      grid-template-columns: 1fr 1.2fr;
+      gap: 50px;
+      align-items: flex-start;
+    }
+
+    /* Services grid */
+    .service-card-v2 {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      overflow: hidden;
+      transition: all 0.3s ease;
+      position: relative;
+    }
+
+    .service-card-v2:hover {
+      transform: translateY(-5px);
+      border-color: var(--primary-blue);
+      box-shadow: var(--shadow-glow-blue);
+    }
+
+    .service-card-v2-img {
+      position: relative;
+      line-height: 0;
+    }
+
+    .service-card-v2-img img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .service-card-v2-icon {
+      position: absolute;
+      top: -20px;
+      right: 20px;
+      background: var(--accent-mint);
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--border-color);
+    }
+
+    .service-card-v2-icon svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--bg-dark);
+    }
+
+    .service-card-v2-body {
+      padding: 25px;
+      padding-top: 30px;
+    }
+
+    .service-card-v2-body h3 {
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .service-card-v2-body p {
+      font-size: 0.9rem;
+      color: var(--text-silver);
+      line-height: 1.6;
+      margin-bottom: 20px;
+      min-height: 48px;
+    }
+
+    .service-card-v2-link {
+      font-family: var(--font-heading);
+      font-weight: 700;
+      color: var(--accent-orange);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 0.05em;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      text-decoration: none;
+      transition: gap 0.2s ease;
+    }
+
+    .service-card-v2-link:hover {
+      gap: 10px;
+    }
+
+    /* About section image block */
+    .about-image-wrapper {
+      position: relative;
+      text-align: center;
+    }
+
+    .about-image-wrapper img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius-md);
+    }
+
+    /* Horizontal Help Bar */
+    .help-stats-bar {
+      background: linear-gradient(135deg, rgba(var(--primary-blue-rgb), 0.1) 0%, rgba(9, 44, 53, 0.4) 100%);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 30px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .help-call-box h4 {
+      font-size: 0.95rem;
+      color: var(--text-silver);
+      margin-bottom: 5px;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .help-call-box .phone-link {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--accent-orange);
+      text-decoration: none;
+    }
+
+    .stats-box-group {
+      display: flex;
+      gap: 30px;
+    }
+
+    .stat-mini-box {
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      background: rgba(255, 255, 255, 0.01);
+      padding: 15px 30px;
+      border-radius: var(--radius-sm);
+      text-align: center;
+    }
+
+    .stat-mini-box h3 {
+      font-size: 1.8rem;
+      font-weight: 800;
+      color: var(--text-white);
+      margin-bottom: 2px;
+    }
+
+    .stat-mini-box p {
+      font-size: 0.8rem;
+      color: var(--text-silver);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+
+    .collage-container {
+      position: relative;
+      height: 450px;
+      width: 100%;
+    }
+
+    .collage-img-1 {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 180px;
+      height: 130px;
+      border-radius: var(--radius-sm);
+      border: 4px solid var(--bg-dark);
+      z-index: 3;
+      object-fit: cover;
+    }
+
+    .collage-img-2 {
+      position: absolute;
+      top: 150px;
+      left: 0;
+      width: 180px;
+      height: 130px;
+      border-radius: var(--radius-sm);
+      border: 4px solid var(--bg-dark);
+      z-index: 3;
+      object-fit: cover;
+    }
+
+    .collage-img-3 {
+      position: absolute;
+      top: 30px;
+      right: 0;
+      width: 320px;
+      height: 380px;
+      border-radius: var(--radius-sm);
+      z-index: 1;
+      object-fit: cover;
+    }
+
+    /* Why Choose Us Feature items */
+    .wcu-item {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 30px;
+      align-items: flex-start;
+    }
+
+    .wcu-icon-box {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      width: 48px;
+      height: 48px;
+      border-radius: var(--radius-sm);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .wcu-icon-box svg {
+      width: 24px;
+      height: 24px;
+      fill: var(--accent-orange);
+    }
+
+    .wcu-info h3 {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--text-white);
+      margin-bottom: 8px;
+    }
+
+    .wcu-info p {
+      font-size: 0.9rem;
+      color: var(--text-silver);
+      line-height: 1.5;
+    }
+
+    /* Testimonial Bubble Layout*/
+    .testi-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 40px;
+      position: relative;
+    }
+
+    .testi-quote {
+      font-size: 0.95rem;
+      color: var(--text-silver);
+      line-height: 1.7;
+      margin-bottom: 30px;
+      position: relative;
+    }
+
+    .testi-user {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .testi-user-profile {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .testi-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .testi-name {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-white);
+    }
+
+    .testi-quote-icon {
+      font-size: 2.5rem;
+      line-height: 1;
+      font-family: var(--font-heading);
+      font-weight: 900;
+      color: var(--accent-orange);
+      opacity: 0.3;
+    }
+
+    /* Coupon Dashed Box */
+    .coupon-box {
+      border: 2px dashed var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 40px;
+      text-align: center;
+      max-width: 800px;
+      margin: 60px auto 0 auto;
+    }
+
+    .coupon-box h3 {
+      font-size: 1.6rem;
+      margin-bottom: 24px;
+      font-weight: 700;
+      color: var(--text-white);
+      line-height: 1.4;
+    }
+
+    /* Shaking Hands Contact Layout*/
+    .get-in-touch-wrapper {
+      background-image: linear-gradient(rgba(4, 60, 79, 0.9), rgba(4, 60, 79, 0.9)), url('assets/images/smog-check-station-1.jpg');
+      background-size: cover;
+      background-position: center;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-color);
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (max-width: 991px) {
+
+      .faq-grid,
+      .hero-feature-row,
+      .help-stats-bar,
+      .collage-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .collage-container {
+        height: auto;
+      }
+
+      .collage-img-1,
+      .collage-img-2,
+      .collage-img-3 {
+        position: static;
+        width: 100%;
+        height: 250px;
+        margin-bottom: 15px;
+        border: none;
+      }
+
+      .get-in-touch-wrapper {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="home.html" class="logo" id="logo-link">
+        <img src="assets/images/logo.png" alt="Smog &amp; Safety Inspection" class="header-logo-img">
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" id="menu-btn">
+        <i class="fa-solid fa-bars burger-icon"></i>
+        <i class="fa-solid fa-xmark close-icon d-none-init"></i>
+      </button>
+
+      <ul class="nav-menu" id="menu-list">
+        <li class="nav-item active"><a href="home.html">Home</a></li>
+        <li class="nav-item nav-dropdown" id="dropdown-menu">
+          <a href="#">Services</a>
+          <ul class="nav-dropdown-menu">
+            <li class="dropdown-item"><a href="smog-check-station.html">Smog Check Station</a></li>
+            <li class="dropdown-item"><a href="brake-and-lamp-inspection.html">Brake &amp; Lamp Inspection</a></li>
+            <li class="dropdown-item"><a href="wheel-alignment.html">Wheel Alignment</a></li>
+            <li class="dropdown-item"><a href="brake-repair.html">Brake Repair</a></li>
+            <li class="dropdown-item"><a href="other-auto-services.html">Other Auto Services</a></li>
+          </ul>
+        </li>
+        <li class="nav-item "><a href="contact.html">Contact</a></li>
+        <li class="nav-item-cta">
+          <a href="tel:619-490-9510" class="cta-header-btn" id="phone-cta">
+            <i class="fa-solid fa-phone me-2"></i>
+            <span>Call 619-490-9510</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Hero Section-->
+  <section class="home-hero">
+    <div class="container">
+      <div class="u-style-78" data-aos="fade-up">
+        <div class="home-hero-subtitle">Smog and Safety Inspection Done Quickly and Right</div>
+        <h1>CA DMV Smog Inspections &amp; Brake And Light Inspections</h1>
+        <div class="home-hero-subtags">SMOG CHECK REPAIR | DMV BRAKE &amp; LAMP INSPECTION STATION | VIN VERIFICATION
+        </div>
+        <a href="contact.html" class="home-hero-btn">Book Appointment</a>
+      </div>
+
+      <!-- Bottom Overlay Cards -->
+      <div class="hero-feature-row">
+        <!-- Card 1 -->
+        <div class="hero-feature-card" data-aos="fade-up" data-aos-delay="100">
+          <h3 class="u-style-79">Licensed &amp; Certified</h3>
+          <p>We have the experience to get your car back on the road</p>
+        </div>
+        <!-- Card 2 -->
+        <div class="hero-feature-card active" data-aos="fade-up" data-aos-delay="200">
+          <h3>Full Service DMV Provider</h3>
+          <p>Get you license plates or stickers on the spot</p>
+        </div>
+        <!-- Card 3 -->
+        <div class="hero-feature-card" data-aos="fade-up" data-aos-delay="300">
+          <h3 class="u-style-79">Auto Repair Solutions</h3>
+          <p>We repair all makes and models</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section-->
+  <section class="section-padding info-section u-style-7">
+    <div class="container faq-grid">
+      <!-- Left side header -->
+      <div data-aos="fade-right">
+        <span class="badge">Frequently Asked Questions</span>
+        <h2 class="u-style-1">Who Needs Smog Inspection?</h2>
+        <p class="u-style-89">
+          California requires all gasoline and hybrid vehicles 1976 and newer to undergo smog inspection. Additionally,
+          all 1998 and newer diesel engine vehicles are required to obtain smog certification, as well as.
+        </p>
+        <p class="u-style-88">
+          Depending on your zip code you may be required to undergo a smog inspection every other year or just when you
+          transfer ownership of the vehicle. If your vehicle is eight years old or newer, you are exempt from smog
+          certification.
+        </p>
+        <a href="contact.html" class="btn btn-orange u-style-90">Ask Us Anything</a>
+      </div>
+
+      <!-- Right side accordions -->
+      <div class="faq-accordion" data-aos="fade-left">
+        <div class="faq-item u-style-91">
+          <div class="faq-header u-style-92">
+            <h4 class="u-style-93">Does My Vehicle Qualify for a Smog Exemption?</h4>
+            <span class="faq-icon u-style-94">&darr;</span>
+          </div>
+          <div class="faq-body u-style-95">
+            Your vehicle is exempt from smog inspections if it falls into one of the following categories:
+
+            Gasoline-powered, 1975 year model or older
+            Diesel-powered manufactured before 1998 or with a Gross Vehicle Weight Rating (GVWR) over 14,000 lbs
+            Electric
+            Natural gas-powered with a GVWR over 14,000 lbs
+            Motorcycle
+            Trailer
+          </div>
+        </div>
+
+        <div class="faq-item u-style-91">
+          <div class="faq-header u-style-92">
+            <h4 class="u-style-93">When is a brake and lamp inspection needed?</h4>
+            <span class="faq-icon u-style-94">&darr;</span>
+          </div>
+          <div class="faq-body u-style-95">
+            A brake and lamp inspection is commonly required by the California DMV for revived salvage title vehicles,
+            vehicles being imported from out of state, or when resolving a defect citation issued by the Highway Patrol.
+          </div>
+        </div>
+
+        <div class="faq-item u-style-91">
+          <div class="faq-header u-style-92">
+            <h4 class="u-style-93">What are common signs of wheel alignment problems?</h4>
+            <span class="faq-icon u-style-94">&darr;</span>
+          </div>
+          <div class="faq-body u-style-95">
+            Common signs include the vehicle pulling strongly to one side, uneven or rapid tire wear, steering wheel
+            being crooked or off-center when driving straight, and squealing tires.
+          </div>
+        </div>
+
+        <div class="faq-item u-style-91">
+          <div class="faq-header u-style-92">
+            <h4 class="u-style-93">What are signs a vehicle needs brake repair?</h4>
+            <span class="faq-icon u-style-94">&darr;</span>
+          </div>
+          <div class="faq-body u-style-95">
+            Warning signs include grinding or squealing noises under braking, a spongy or soft brake pedal, vibration or
+            pulsing in the steering wheel, and the brake dashboard warning light coming on.
+          </div>
+        </div>
+
+        <div class="faq-item u-style-91">
+          <div class="faq-header u-style-92">
+            <h4 class="u-style-93">Does the shop handle inspection-related repairs?</h4>
+            <span class="faq-icon u-style-94">&darr;</span>
+          </div>
+          <div class="faq-body u-style-95">
+            Yes, we are a licensed test-and-repair station. If your vehicle fails a smog test, we can diagnose and
+            complete the necessary repairs in-house.
+          </div>
+        </div>
+
+        <div class="faq-item u-style-91">
+          <div class="faq-header u-style-92">
+            <h4 class="u-style-93">What is the fastest way to book?</h4>
+            <span class="faq-icon u-style-94">&darr;</span>
+          </div>
+          <div class="faq-body u-style-95">
+            The absolute fastest way is to call the shop directly at 619-490-9510. You can also visit our shop or submit
+            a request on our contact page.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section  -->
+  <section class="section-padding u-style-7">
+    <div class="container">
+      <div class="u-style-80" data-aos="fade-up">
+        <span class="badge">Our Services</span>
+        <h2 class="u-style-81">Delivering Superior Smog Inspection &amp; Repair Solutions</h2>
+      </div>
+
+      <div class="grid-3 u-style-18">
+        <!-- Card 1: Smog Check -->
+        <div class="service-card-v2" data-aos="fade-up" data-aos-delay="0">
+          <div class="service-card-v2-img">
+            <img src="assets/images/service-v1.jpg" alt="Smog Check Station">
+            <div class="service-card-v2-icon">
+              <!-- Smog icon -->
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-2 10H7v-2h10v2zm0-4H7V7h10v2z" />
+              </svg>
+            </div>
+          </div>
+          <div class="service-card-v2-body">
+            <h3>SMOG CHECK STATION</h3>
+            <p>In order to keep vehicle emissions from harming California's air quality</p>
+            <a href="smog-check-station.html" class="service-card-v2-link">Read More &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Wheel Alignment -->
+        <div class="service-card-v2" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-card-v2-img">
+            <img src="assets/images/service-v2.jpg" alt="Wheel Alignment">
+            <div class="service-card-v2-icon">
+              <!-- Steering Wheel icon -->
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+              </svg>
+            </div>
+          </div>
+          <div class="service-card-v2-body">
+            <h3>WHEEL ALIGNMENT</h3>
+            <p>Vehicle wheels perform best when they're lined up according to manufacturer specifications</p>
+            <a href="wheel-alignment.html" class="service-card-v2-link">Read More &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 3: Brake Repair -->
+        <div class="service-card-v2" data-aos="fade-up" data-aos-delay="200">
+          <div class="service-card-v2-img">
+            <img src="assets/images/service-v3.jpg" alt="Brake Repair">
+            <div class="service-card-v2-icon">
+              <!-- Wheel/Brake icon -->
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8z" />
+              </svg>
+            </div>
+          </div>
+          <div class="service-card-v2-body">
+            <h3>BRAKE REPAIR</h3>
+            <p>Properly working brakes are essential to keeping you and your passengers safe on the road.</p>
+            <a href="brake-repair.html" class="service-card-v2-link">Read More &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 4: Brake & Light Inspection -->
+        <div class="service-card-v2" data-aos="fade-up" data-aos-delay="300">
+          <div class="service-card-v2-img">
+            <img src="assets/images/service-l-v4.jpg" alt="Brake &amp; Light Inspection">
+            <div class="service-card-v2-icon">
+              <!-- Car/Lamp icon -->
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.21.42-1.42.99L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
+              </svg>
+            </div>
+          </div>
+          <div class="service-card-v2-body">
+            <h3>BRAKE &amp; Light INSPECTION</h3>
+            <p>The Smog DMV requires that any salvaged or junked vehicle is in safe, roadworthy condition before being
+              retitled.</p>
+            <a href="brake-and-lamp-inspection.html" class="service-card-v2-link">Read More &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 5: Other Auto Services -->
+        <div class="service-card-v2" data-aos="fade-up" data-aos-delay="400">
+          <div class="service-card-v2-img">
+            <img src="assets/images/service-v5.jpg" alt="Other Auto Services">
+            <div class="service-card-v2-icon">
+              <!-- Tools/Engine icon -->
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M22.7 19l-9.1-9.1c.9-2.3.4-5-1.5-6.9-2-2-5-2.4-7.4-1.3L9 6 6 9 1.6 4.3C.5 6.7.9 9.8 2.9 11.8c1.9 1.9 4.6 2.4 6.9 1.5l9.1 9.1c.4.4 1 .4 1.4 0l2.3-2.3c.5-.4.5-1.1.1-1.6z" />
+              </svg>
+            </div>
+          </div>
+          <div class="service-card-v2-body">
+            <h3>OTHER AUTO SERVICES</h3>
+            <p>A well-maintained vehicle is the best defense against breakdowns and complicated repairs.</p>
+            <a href="other-auto-services.html" class="service-card-v2-link">Read More &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 6: Schedule Appointment -->
+        <div class="service-card-v2 u-style-82" data-aos="fade-up" data-aos-delay="500">
+          <div class="service-card-v2-img">
+            <img src="assets/images/service-v6.jpg" alt="Schedule Appointment">
+            <div class="service-card-v2-icon u-style-83">
+              <!-- Calendar/Appointment icon -->
+              <svg viewBox="0 0 24 24" class="u-style-84">
+                <path
+                  d="M19 4h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V10h14v10zm-7-3h5v-5h-5v5z" />
+              </svg>
+            </div>
+          </div>
+          <div class="service-card-v2-body">
+            <h3>SCHEDULE APPOINTMENT</h3>
+            <p>At Smog and Safety Inspection in San Diego, we provide a comprehensive approach to auto service.</p>
+            <a href="contact.html" class="service-card-v2-link u-style-85">Contact Now &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <!-- Who We Are & Consultation Section-->
+  <section class="section-padding u-style-7">
+    <div class="container grid-3 u-style-96" data-aos="fade-up">
+      <!-- Left: Who We Are Text & Badges -->
+      <div data-aos="fade-right" data-aos-delay="100">
+        <span class="badge">Who We Are ?</span>
+        <h2 class="u-style-13">Smog Detailing And Repair Services You Can Rely On</h2>
+        <p class="u-style-97">
+          Introducing Smog And Safety Inspection, your trusted choice in San Diego County. For over 12 years, we've been
+          serving San Diego, CA, renowned for our swift and efficient smog testing services. With a sole focus on smog
+          testing, we offer short wait times, no appointments necessary (though available upon request), and an enticing
+          deal: $46.75 Smog Coupon Pass or a free retest for 2000 and newer vehicles within 30 days of the initial test,
+          with an additional $8.25 certificate fee. For 1999 and older vehicles, add $10. This exclusive offer, not
+          combinable with other coupons, requires coupon presentation. We cover all your smog testing needs, including
+          DMV Smog Inspection and Diesel Smog Check. Trust us for your smog testing needs in San Diego County.
+        </p>
+
+        <!-- Compliance Badges and Contact CTA -->
+        <div class="u-style-98">
+          <img src="assets/images/california_license.png" alt="" class="img-fluid">
+        </div>
+
+        <div class="u-style-104">
+          <a href="contact.html" class="btn btn-orange u-style-90">Contact Us Now</a>
+          <a href="tel:619-490-9510" class="u-style-105">
+            <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24" class="u-style-106">
+              <path
+                d="M6.62 10.79a15.15 15.15 0 0 0 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+            </svg>
+            619-490-9510
+          </a>
+        </div>
+      </div>
+
+      <!-- Center: Mechanic leaning-->
+      <div class="about-image-wrapper" data-aos="zoom-in" data-aos-delay="200">
+        <img src="assets/images/serviceman-sitting-on-tires.png" alt="Our Technicians" class="u-style-107">
+      </div>
+
+      <!-- Right: Free Consultation Form -->
+      <div class="sidebar-box m-0" data-aos="fade-left" data-aos-delay="300">
+        <h4>Get A Free Consultation</h4>
+        <form id="home-consultation-form" class="contact-form u-style-37">
+          <div class="form-group mb-2">
+            <input type="text" id="home-consult-name" class="form-control u-style-38" placeholder="Name" required>
+          </div>
+          <div class="form-group mb-2">
+            <input type="email" id="home-consult-email" class="form-control u-style-38" placeholder="Email" required>
+          </div>
+          <div class="form-group mb-2">
+            <input type="tel" id="home-consult-phone" class="form-control u-style-38" placeholder="Phone" required>
+          </div>
+          <div class="form-group mb-2">
+            <input type="text" id="home-consult-subject" class="form-control u-style-38" placeholder="Subject" required>
+          </div>
+          <div class="form-group u-style-39">
+            <textarea id="home-consult-message" class="form-control u-style-38" placeholder="Comment or Message"
+              rows="4" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-orange u-style-40">Schedule Now</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Help & Stats Row-->
+  <section class="container u-style-112">
+    <div class="help-stats-bar" data-aos="fade-up">
+      <!-- Call us box -->
+      <div class="help-call-box">
+        <h4>Any Help ? Call Us</h4>
+        <a href="tel:619-490-9510" class="phone-link">619-490-9510</a>
+      </div>
+
+      <!-- Stats Box Group -->
+      <div class="stats-box-group">
+        <div class="stat-mini-box">
+          <h3>250+</h3>
+          <p>Project Complete</p>
+        </div>
+        <div class="stat-mini-box">
+          <h3>1.5K</h3>
+          <p>Happy Customer</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section-->
+  <section class="section-padding u-style-7">
+    <div class="container grid-2 u-style-86">
+      <!-- Left side overlapping images collage -->
+      <div class="collage-container" data-aos="fade-right">
+        <img src="assets/images/mechanic-in-overalls.jpg" alt="Under chassis alignment check" class="collage-img-1">
+        <img src="assets/images/brake-lamp-service.jpg" alt="Brake pad replacement check" class="collage-img-2">
+        <img src="assets/images/blow-the-air-in-break.jpg" alt="Mechanic testing exhaust values" class="collage-img-3">
+      </div>
+
+      <!-- Right side details -->
+      <div data-aos="fade-left">
+        <span class="badge">Why Choose Us ?</span>
+        <h2 class="u-style-87">Unleash The Sparkle, Car Smog Inspection And Repair Excellence</h2>
+        <p class="u-style-88">
+          At Smog, we take pride in delivering the highest standards of excellence in car smog inspection and repair
+          services. Our commitment to your vehicle's performance and environmental compliance is unwavering.
+        </p>
+
+        <!-- Feature elements -->
+        <div class="wcu-item">
+          <div class="wcu-icon-box">
+            <!-- Expertise icon -->
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H7c0-2.76 2.24-5 5-5s5 2.24 5 5c0 1.04-.42 1.99-1.07 2.75z" />
+            </svg>
+          </div>
+          <div class="wcu-info">
+            <h3>Expertise &amp; Experience</h3>
+            <p>With years of experience, our team is well-versed in the intricacies of smog inspections and repairs.</p>
+          </div>
+        </div>
+
+        <div class="wcu-item">
+          <div class="wcu-icon-box">
+            <!-- Attention icon -->
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z" />
+            </svg>
+          </div>
+          <div class="wcu-info">
+            <h3>Attention To Detail</h3>
+            <p>In addition to smog services, we offer exterior detailing to give your vehicle that extra shine and
+              protection.</p>
+          </div>
+        </div>
+
+        <div class="wcu-item">
+          <div class="wcu-icon-box">
+            <!-- Satisfaction icon -->
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-6h2v6zm0-8h-2V7h2v4z" />
+            </svg>
+          </div>
+          <div class="wcu-info">
+            <h3>Customer Satisfaction</h3>
+            <p>We believe in clear communication and provide you with a transparent process from start to finish.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials & Dashed Coupon -->
+  <section class="section-padding info-section u-style-7">
+    <div class="container">
+      <div class="u-style-80" data-aos="fade-up">
+        <span class="badge">Testimonial</span>
+        <h2 class="u-style-81">What They Say About Us ?</h2>
+      </div>
+
+      <div class="grid-2 u-style-11">
+        <!-- Left: Card -->
+        <div class="testi-card" data-aos="fade-right">
+          <p class="testi-quote">
+            "I had an amazing experience with Travice. They transformed my car from looking dull and worn-out to a
+            show-stopper. The attention to detail was impeccable, and the exterior detailing made my car shine like it
+            was brand new. Not only that, but their expertise in diagnosing and repairing a persistent engine issue
+            saved me from costly repairs down the line. I highly recommend their services for anyone looking for
+            top-notch car detailing and repair"
+          </p>
+          <div class="testi-user">
+            <div class="testi-user-profile">
+              <img src="assets/images/testimonial_img.png" alt="Dyas Kardinal" class="testi-avatar">
+              <span class="testi-name">Dyas Kardinal</span>
+            </div>
+            <span class="testi-quote-icon">99</span>
+          </div>
+        </div>
+        <!-- Right: Image -->
+        <div class="testimonial-image" data-aos="fade-left">
+          <img src="assets/images/testimonial_img.png" alt="Happy Customer with Car" class="u-style-108">
+        </div>
+      </div>
+
+      <!-- Dashed 25% Off Box -->
+      <div class="coupon-box" data-aos="zoom-in" data-aos-delay="200">
+        <h3>Use Our Services &amp; Get 25% Cut Off For Every Service Until End Of Month</h3>
+        <a href="contact.html" class="btn btn-orange u-style-109">Make An Appointment Now</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bottom Handshaking Contact Layout-->
+  <section class="section-padding u-style-7">
+    <div class="container grid-2 u-style-110">
+      <!-- Left Column: Form -->
+      <div class="sidebar-box u-style-61" data-aos="fade-right">
+        <h3 class="u-style-62">Get In Touch With Us</h3>
+        <form id="bottom-git-form" class="contact-form u-style-37">
+          <div class="u-style-60">
+            <input type="text" id="git-first-name" class="form-control u-style-38" placeholder="First Name" required>
+            <input type="text" id="git-last-name" class="form-control u-style-38" placeholder="Last Name" required>
+          </div>
+          <div class="form-group" class="mb-3">
+            <input type="email" id="git-email" class="form-control u-style-38" placeholder="Your Email" required>
+          </div>
+          <div class="form-group" class="mb-3">
+            <input type="tel" id="git-phone" class="form-control u-style-38" placeholder="Phone" required>
+          </div>
+          <div class="u-style-60">
+            <input type="text" id="git-date" class="form-control u-style-38" placeholder="Date" required>
+            <input type="text" id="git-time" class="form-control u-style-38" placeholder="Time" required>
+          </div>
+          <div class="form-group" class="mb-3">
+            <input type="text" id="git-subject" class="form-control u-style-38" placeholder="Subject" required>
+          </div>
+          <div class="form-group mb-3">
+            <textarea id="git-message" class="form-control u-style-38" placeholder="Message" rows="4"
+              required></textarea>
+          </div>
+          <button type="submit" class="btn btn-orange u-style-40">Get In Touch</button>
+        </form>
+      </div>
+
+      <!-- Right Column: Handshaking visual panel -->
+      <div class="get-in-touch-wrapper" data-aos="fade-left">
+        <span class="badge u-style-65">Contact Us</span>
+        <h2 class="u-style-111">Get In Touch</h2>
+        <p class="u-style-88">
+          We provide a holistic approach to auto services, focusing on routine maintenance, inspections, and repairs,
+          all aimed at ensuring your safety while driving.
+        </p>
+
+        <!-- Information rows -->
+        <div class="u-style-68">
+          <div class="u-style-69">
+            <span class="u-style-70">&#9742;</span>
+            <a href="tel:619-490-9510" class="u-style-71">619-490-9510</a>
+          </div>
+          <div class="u-style-72">
+            <span class="u-style-73">&#128205;</span>
+            <span class="u-style-74">6414 University Ave San Diego Ca 92115</span>
+          </div>
+        </div>
+
+        <!-- Smog licensing badge -->
+        <div class="">
+          <!-- Smog Check emblem -->
+          <img src="assets/images/california_license.png" alt="" class="img-fluid w-50">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Next Step CTA Banner -->
+  <section class="next-step-cta" data-aos="zoom-in">
+    <div class="container next-step-grid">
+      <div class="next-step-content">
+        <h5>Need the next step?</h5>
+        <h2>Call the shop and explain what your DMV notice, vehicle, or dashboard warning is indicating.</h2>
+        <p>Smog and Safety Inspection can help direct you to the right service, including smog testing, brake and lamp
+          inspections, brake repair, wheel alignment, VIN verification, maintenance, and more.</p>
+      </div>
+      <div class="next-step-buttons">
+        <a href="tel:619-490-9510" class="btn btn-black" id="cta-footer-call">Call 619-490-9510</a>
+        <a href="https://maps.google.com/?q=6414+University+Ave,+San+Diego,+CA+92115" target="_blank"
+          class="btn btn-white" id="cta-footer-directions">Get directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid footer-grid-four-cols">
+        <!-- Col 1 -->
+        <div class="footer-col">
+          <img src="assets/images/logo.png" alt="Smog &amp; Safety Inspection" class="footer-logo-img">
+          <p class="footer-desc text-silver fs-6">
+            San Diego smog checks, DMV brake and lamp inspections, wheel alignment, brake repair, VIN verification, and
+            maintenance support.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="smog-check-station.html">Smog Check Station</a></li>
+            <li><a href="wheel-alignment.html">Wheel Alignment</a></li>
+            <li><a href="brake-repair.html">Brake Repair</a></li>
+            <li><a href="brake-and-lamp-inspection.html">Brake &amp; Light Inspection</a></li>
+            <li><a href="other-auto-services.html">Other Auto Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links pe-none">
+            <li class="d-flex align-items-center gap-2 mb-3 text-silver">
+              <i class="fa-solid fa-phone text-primary-blue me-2"></i>
+              <span>619-490-9510</span>
+            </li>
+            <li class="d-flex align-items-start gap-2 mb-3 text-silver">
+              <i class="fa-solid fa-location-dot text-primary-blue me-2 mt-1"></i>
+              <span>6414 University Ave San Diego Ca 92115</span>
+            </li>
+            <li class="text-silver">
+              <strong class="d-block text-white mb-1">Work Hours :</strong>
+              <div class="fs-6">Mon - Sat : 8am - 6pm</div>
+              <div class="fs-6">Sunday : 8am - 3pm</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="footer-col d-flex flex-column gap-3 align-items-start">
+          <!-- State of California Image-->
+          <div class="footer-badge-cali">
+            <img src="assets/images/california_license.png" alt="" class="img-fluid">
+          </div>
+          <!-- Logo -->
+          <div class="footer-badge-logo">
+            <span class="footer-badge-logo-text"><img src="assets/images/logo.png" alt=""
+                class="img-fluid bg-light p-3"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright 2026 Smog and Safety Inspection. &copy; All Right Reserved Design by Neo Web Solution</p>
+        <ul class="footer-legal-links">
+          <li><a href="home.html">Terms of Use</a></li>
+          <li><a href="home.html">Privacy Policy</a></li>
+          <li><a href="home.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // FAQ Accordion functionality
+    document.querySelectorAll('.faq-header').forEach(header => {
+      header.addEventListener('click', () => {
+        const item = header.parentElement;
+        const body = item.querySelector('.faq-body');
+        const icon = header.querySelector('.faq-icon');
+
+        // Toggle this item
+        if (body.style.display === 'block') {
+          body.style.display = 'none';
+          icon.innerHTML = '&darr;';
+          item.style.background = 'rgba(255,255,255,0.01)';
+        } else {
+          // Close other items
+          document.querySelectorAll('.faq-item').forEach(otherItem => {
+            otherItem.querySelector('.faq-body').style.display = 'none';
+            otherItem.querySelector('.faq-icon').innerHTML = '&darr;';
+            otherItem.style.background = 'rgba(255,255,255,0.01)';
+          });
+          body.style.display = 'block';
+          icon.innerHTML = '&uarr;';
+          item.style.background = 'rgba(255,255,255,0.03)';
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

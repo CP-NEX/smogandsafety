@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Smog and Safety Inspection San Diego</title>
+  <meta name="description"
+    content="Get in touch with Smog and Safety Inspection in San Diego. Request appointments, consultations, and ask questions about smog tests, brake & lamp check.">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/index.css?v=1.2">
+  <link rel="shortcut icon" href="https://www.smogandsafetyinspection.com/wp-content/uploads/2023/09/fav-icon.png"
+    type="image/png">
+  <style>
+    .contact-main-section {
+      background: var(--bg-dark);
+      padding: 120px 0 80px 0;
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: 50px;
+      align-items: stretch;
+    }
+
+    .contact-info-panel {
+      background-image: linear-gradient(rgba(4, 60, 79, 0.85), rgba(4, 60, 79, 0.85)), url('assets/images/hero_all.png');
+      background-size: cover;
+      background-position: center;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-md);
+      padding: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @media (max-width: 991px) {
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+      }
+
+      .contact-info-panel {
+        padding: 30px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Sticky Header Navigation -->
+  <header>
+    <div class="container nav-container">
+      <a href="home.html" class="logo" id="logo-link">
+        <img src="assets/images/logo.png" alt="Smog &amp; Safety Inspection" class="header-logo-img">
+      </a>
+
+      <button class="menu-toggle" aria-label="Toggle Menu" aria-expanded="false" id="menu-btn">
+        <i class="fa-solid fa-bars burger-icon"></i>
+        <i class="fa-solid fa-xmark close-icon d-none-init"></i>
+      </button>
+
+      <ul class="nav-menu" id="menu-list">
+        <li class="nav-item "><a href="home.html">Home</a></li>
+        <li class="nav-item nav-dropdown" id="dropdown-menu">
+          <a href="#">Services</a>
+          <ul class="nav-dropdown-menu">
+            <li class="dropdown-item"><a href="smog-check-station.html">Smog Check Station</a></li>
+            <li class="dropdown-item"><a href="brake-and-lamp-inspection.html">Brake &amp; Lamp Inspection</a></li>
+            <li class="dropdown-item"><a href="wheel-alignment.html">Wheel Alignment</a></li>
+            <li class="dropdown-item"><a href="brake-repair.html">Brake Repair</a></li>
+            <li class="dropdown-item"><a href="other-auto-services.html">Other Auto Services</a></li>
+          </ul>
+        </li>
+        <li class="nav-item active"><a href="contact.html">Contact</a></li>
+        <li class="nav-item-cta">
+          <a href="tel:619-490-9510" class="cta-header-btn" id="phone-cta">
+            <i class="fa-solid fa-phone me-2"></i>
+            <span>Call 619-490-9510</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </header>
+
+  <!-- Contact main layout section -->
+  <section class="contact-main-section">
+    <div class="container contact-grid">
+
+      <!-- Left Column: Form -->
+      <div class="sidebar-box u-style-61" data-aos="fade-right">
+        <h3 class="u-style-62">Get In Touch With Us</h3>
+
+        <form id="contact-page-form" class="contact-form u-style-37">
+          <div class="u-style-60">
+            <input type="text" id="contact-first-name" class="form-control u-style-63" placeholder="First Name"
+              required>
+            <input type="text" id="contact-last-name" class="form-control u-style-63" placeholder="Last Name" required>
+          </div>
+
+          <div class="form-group" class="mb-3">
+            <input type="email" id="contact-email" class="form-control u-style-63" placeholder="Your Email" required>
+          </div>
+
+          <div class="form-group" class="mb-3">
+            <input type="tel" id="contact-phone" class="form-control u-style-63" placeholder="Phone" required>
+          </div>
+
+          <div class="u-style-60">
+            <input type="text" id="contact-date" class="form-control u-style-63" placeholder="Date" required>
+            <input type="text" id="contact-time" class="form-control u-style-63" placeholder="Time" required>
+          </div>
+
+          <div class="form-group" class="mb-3">
+            <input type="text" id="contact-subject" class="form-control u-style-63" placeholder="Subject" required>
+          </div>
+
+          <div class="form-group mb-3">
+            <textarea id="contact-message" class="form-control u-style-63" placeholder="Message" rows="5"
+              required></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-orange u-style-64">Get In Touch</button>
+        </form>
+      </div>
+
+      <!-- Right Column: Information Panel-->
+      <div class="contact-info-panel" data-aos="fade-left">
+        <span class="badge u-style-65">Contact Us</span>
+        <h2 class="u-style-66">Get In Touch</h2>
+
+        <p class="u-style-67">
+          AUTO REPAIR | SMOG CHECK, DMV BRAKE &amp; LAMP INSPECTION STATION | SmogCheck for Out of State.
+        </p>
+
+        <!-- Phone & Address details -->
+        <div class="u-style-68">
+          <div class="u-style-69">
+            <span class="u-style-70">&#9742;</span>
+            <a href="tel:619-490-9510" class="u-style-71">619-490-9510</a>
+          </div>
+
+          <div class="u-style-72">
+            <span class="u-style-73">&#128205;</span>
+            <span class="u-style-74">6414 University Ave San Diego Ca 92115</span>
+          </div>
+        </div>
+
+        <!-- Smog licensed badge -->
+        <div class="">
+          <!-- Smog Check emblem -->
+          <img src="assets/images/california_license.png" alt="" class="img-fluid w-50">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Dark Map -->
+  <section class="map-section-wrapper">
+    <div class="map-container map-container-iframe" data-aos="fade-up">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3356.2427848695027!2d-117.0601614234731!3d32.75924297367807!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80d9513361e6878b%3A0xe6a8360d5bfa75b5!2s6414%20University%20Ave%2C%20San%20Diego%2C%20CA%2092115!5e0!3m2!1sen!2sus!4v1721025555555!5m2!1sen!2sus"
+        allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- Next Step CTA -->
+  <section class="next-step-cta" data-aos="zoom-in">
+    <div class="container next-step-grid">
+      <div class="next-step-content">
+        <h5>Need the next step?</h5>
+        <h2>Call the shop and explain what your DMV notice, vehicle, or dashboard warning is indicating.</h2>
+        <p>Smog and Safety Inspection can help direct you to the right service, including smog testing, brake and lamp
+          inspections, brake repair, wheel alignment, VIN verification, maintenance, and more.</p>
+      </div>
+      <div class="next-step-buttons">
+        <a href="tel:619-490-9510" class="btn btn-black" id="cta-footer-call">Call 619-490-9510</a>
+        <a href="https://maps.google.com/?q=6414+University+Ave,+San+Diego,+CA+92115" target="_blank"
+          class="btn btn-white" id="cta-footer-directions">Get directions</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid footer-grid-four-cols">
+        <!-- Col 1 -->
+        <div class="footer-col">
+          <img src="assets/images/logo.png" alt="Smog &amp; Safety Inspection" class="footer-logo-img">
+          <p class="footer-desc text-silver fs-6">
+            San Diego smog checks, DMV brake and lamp inspections, wheel alignment, brake repair, VIN verification, and
+            maintenance support.
+          </p>
+          <div class="d-flex gap-2 mt-3">
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#" class="footer-social-link">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Col 2 -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links">
+            <li><a href="smog-check-station.html">Smog Check Station</a></li>
+            <li><a href="wheel-alignment.html">Wheel Alignment</a></li>
+            <li><a href="brake-repair.html">Brake Repair</a></li>
+            <li><a href="brake-and-lamp-inspection.html">Brake &amp; Light Inspection</a></li>
+            <li><a href="other-auto-services.html">Other Auto Services</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3 -->
+        <div class="footer-col">
+          <h4>Services</h4>
+          <ul class="footer-links pe-none">
+            <li class="d-flex align-items-center gap-2 mb-3 text-silver">
+              <i class="fa-solid fa-phone text-primary-blue me-2"></i>
+              <span>619-490-9510</span>
+            </li>
+            <li class="d-flex align-items-start gap-2 mb-3 text-silver">
+              <i class="fa-solid fa-location-dot text-primary-blue me-2 mt-1"></i>
+              <span>6414 University Ave San Diego Ca 92115</span>
+            </li>
+            <li class="text-silver">
+              <strong class="d-block text-white mb-1">Work Hours :</strong>
+              <div class="fs-6">Mon - Sat : 8am - 6pm</div>
+              <div class="fs-6">Sunday : 8am - 3pm</div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Col 4 -->
+        <div class="footer-col d-flex flex-column gap-3 align-items-start">
+          <!-- State of California Image-->
+          <div class="footer-badge-cali">
+            <img src="assets/images/california_license.png" alt="" class="img-fluid">
+          </div>
+          <!-- Logo -->
+          <div class="footer-badge-logo">
+            <span class="footer-badge-logo-text"><img src="assets/images/logo.png" alt=""
+                class="img-fluid bg-light p-3"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>Copyright 2026 Smog and Safety Inspection. &copy; All Right Reserved Design by Neo Web Solution</p>
+        <ul class="footer-legal-links">
+          <li><a href="home.html">Terms of Use</a></li>
+          <li><a href="home.html">Privacy Policy</a></li>
+          <li><a href="home.html">Support</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+
+</html>
